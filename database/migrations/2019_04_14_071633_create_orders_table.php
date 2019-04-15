@@ -50,6 +50,12 @@ class CreateOrdersTable extends Migration
             $table->boolean('is_canceled')->default(0);
             $table->timestamp('canceled_at')->nullable();
             $table->timestamps();
+
+            $table->foreign('supplier_id')->references('id')->on('suppliers')->onDelete('cascade');
+            $table->foreign('payer_id')->references('id')->on('payers')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
+
         });
     }
 
