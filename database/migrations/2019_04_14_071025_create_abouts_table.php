@@ -40,7 +40,8 @@ class CreateAboutsTable extends Migration
             $table->longText('about_us_ar');
             $table->longText('about_us_en');
 
-            $table->longText('polices');
+            $table->longText('polices_ar');
+            $table->longText('polices_en');
             $table->timestamps();
         });
     }
