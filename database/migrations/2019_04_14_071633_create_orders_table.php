@@ -15,7 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigIncrements('order_number');
+            $table->string('order_number')->unique();
 
             $table->unsignedBigInteger('supplier_id');
             $table->unsignedBigInteger('payer_id');
@@ -36,7 +36,7 @@ class CreateOrdersTable extends Migration
 
             $table->integer('quentity')->default(1);
             $table->boolean('online_payment')->default(0);
-            $table->integer('status')->default(0);
+            $table->unsignedBigInteger('status_id')->default(0);
 
 
 
@@ -55,6 +55,7 @@ class CreateOrdersTable extends Migration
             $table->foreign('payer_id')->references('id')->on('payers')->onDelete('cascade');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
+            $table->foreign('status_id')->references('id')->on('order_statuses')->onDelete('cascade');
 
         });
     }
