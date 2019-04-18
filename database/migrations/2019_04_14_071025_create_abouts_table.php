@@ -20,28 +20,28 @@ class CreateAboutsTable extends Migration
 
             $table->float('latitude',10,4)->default(0);
             $table->float('langitude',10,4)->default(0);
-            $table->string('address');
+            $table->string('address')->nullable();
 
 //            Contact Informatios and Social Media
 
-            $table->string('email');
-            $table->string('phone');
-            $table->string('google_plus');
-            $table->string('twitter');
-            $table->string('facebook');
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('google_plus')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('facebook')->nullable();
 
 
 //            Our Message
-            $table->longText('our_message_ar');
-            $table->longText('our_message_en');
+            $table->longText('our_message_ar')->nullable();
+            $table->longText('our_message_en')->nullable();
 
 
 //            About Us
-            $table->longText('about_us_ar');
-            $table->longText('about_us_en');
+            $table->longText('about_us_ar')->nullable();
+            $table->longText('about_us_en')->nullable();
 
-            $table->longText('polices_ar');
-            $table->longText('polices_en');
+            $table->longText('polices_ar')->nullable();
+            $table->longText('polices_en')->nullable();
             $table->timestamps();
         });
     }

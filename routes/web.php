@@ -23,4 +23,30 @@ Route::group(['middleware' => 'auth:admin'] , function (){
 
     Route::get('admin/logout' , 'Admin\AdminAuthController@logout' )->name('admin.logout');
 
+    Route::get('about/contact' , 'Admin\AboutController@showContactPage')->name('about.contact');
+    Route::post('about/contact' , 'Admin\AboutController@updateContact')->name('about.contact.update');
+
+    Route::get('about/about-us' , 'Admin\AboutController@showAboutUsPage')->name('about.aboutUs');
+    Route::post('about/about-us' , 'Admin\AboutController@updateAboutUs')->name('about.aboutUs.update');
+
+    Route::get('about/our-message' , 'Admin\AboutController@showOurMessagePage')->name('about.OurMessage');
+    Route::post('about/our-message' , 'Admin\AboutController@updateOurMessage')->name('about.OurMessage.update');
+
+    Route::get('about/polices' , 'Admin\AboutController@showpolicesPage')->name('about.polices');
+    Route::post('about/polices' , 'Admin\AboutController@updatepolices')->name('about.polices.update');
+
+    Route::get('about/location' , 'Admin\AboutController@showLocationPage')->name('about.location');
+    Route::post('about/location' , 'Admin\AboutController@updateLocation')->name('about.location.update');
+
+
+    Route::resource('admins' , 'Admin\AdminController')->except([
+       'show' ,'destroy'
+    ]);
+    Route::get('admins/{id}/delete' , 'Admin\AdminController@destroy')->name('admins.destroy');
+
+
+    Route::resource('catagories' , 'Admin\CatagoryController')->except([
+        'show' ,'destroy'
+    ]);
+    Route::get('admins/{id}/delete' , 'Admin\AdminController@destroy')->name('admins.destroy');
 });

@@ -9,4 +9,7 @@
 <!--end::Page Vendors -->
 
 <!--begin::Page Snippets -->
+<script src="{{ asset('dashboardAssets/demo/default/custom/crud/forms/widgets/dropzone.js') }}" type="text/javascript"></script>
+
+<script src="{{ asset('dashboardAssets/demo/default/custom/crud/forms/widgets/summernote.js') }}" type="text/javascript"></script>
 <script src="{{asset('dashboardAssets/app/js/dashboard.js')}}" type="text/javascript"></script>
