@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.index');
+Route::get('login' , 'Admin\AdminAuthController@showLoginForm')->name('admin.showLogin');
+Route::post('login' , 'Admin\AdminAuthController@login')->name('admin.login');
+Route::post('register' , 'Admin\AdminAuthController@register')->name('admin.register');
+
+Route::group(['middleware' => 'auth:admin'] , function (){
+
+    Route::get('/', function () {
+        return view('dashboard.index');
+    })->name('admin.dashboard');
+
+    Route::get('admin/logout' , 'Admin\AdminAuthController@logout' )->name('admin.logout');
+
 });

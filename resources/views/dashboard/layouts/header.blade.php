@@ -249,29 +249,16 @@
                                                             -->
                                                 </div>
                                                 <div class="m-card-user__details">
-                                                    <span class="m-card-user__name m--font-weight-500">Mark Andre</span>
-                                                    <a href="" class="m-card-user__email m--font-weight-300 m-link">mark.andre@gmail.com</a>
+                                                    <span class="m-card-user__name m--font-weight-500">{{ auth()->user()->name }}</span>
+                                                    <a class="m-card-user__email m--font-weight-300 m-link">{{ auth()->user()->email }}</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="m-dropdown__body">
                                             <div class="m-dropdown__content">
                                                 <ul class="m-nav m-nav--skin-light">
-                                                    <li class="m-nav__section m--hide">
-                                                        <span class="m-nav__section-text">Section</span>
-                                                    </li>
-{{--                                                    --}}
-{{--                                                    <li class="m-nav__item">--}}
-{{--                                                        <a href="header/profile.html" class="m-nav__link">--}}
-{{--                                                            <i class="m-nav__link-icon flaticon-chat-1"></i>--}}
-{{--                                                            <span class="m-nav__link-text">Messages</span>--}}
-{{--                                                        </a>--}}
-{{--                                                    </li>--}}
-                                                    <li class="m-nav__separator m-nav__separator--fit">
-                                                    </li>
-
                                                     <li class="m-nav__item text-right">
-                                                        <a href="snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">Logout</a>
+                                                        <a href="{{ route('admin.logout') }}" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">Logout</a>
                                                     </li>
                                                 </ul>
                                             </div>
