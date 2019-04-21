@@ -7,6 +7,7 @@ var DropzoneDemo = {
             addRemoveLinks: !0,
             dictFileTooBig: 'Image is larger than 5MB',
             acceptedFiles: "image/*",
+            autoProcessQueue:false,
             accept: function (e, o) {
                 "justinbieber.jpg" == e.name ? o("Naha, you don't.") : o()
             }

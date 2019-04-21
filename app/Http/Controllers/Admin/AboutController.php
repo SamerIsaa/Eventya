@@ -114,4 +114,18 @@ class AboutController extends Controller
         return view('dashboard.aboutUs.location' , compact('location'));
 
     }
+
+    public function updateLocation(Request $request)
+    {
+        $data = $request->all();
+
+        if (!($about = About::first())){
+            About::create($data);
+        }else{
+            $about->update($data);
+        }
+
+        session()->flash('success' , 'تم الحفظ بنجاح');
+        return redirect()->back();
+    }
 }

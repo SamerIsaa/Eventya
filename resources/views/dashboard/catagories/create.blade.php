@@ -44,7 +44,7 @@
                     <div class="form-group m-form__group row text-center">
                         <label class="col-form-label col-lg-3 col-sm-12 text-left">صورة التصنيف</label>
                         <div class="col-lg-4 col-md-9 col-sm-12 text-center">
-                            <div class="m-dropzone dropzone" action="inc/api/dropzone/upload.php" id="m-dropzone-one">
+                            <div class="m-dropzone dropzone" action="{{ route('catagories.store') }}" id="m-dropzone-one">
                                 <div class="m-dropzone__msg dz-message needsclick">
                                     <h3 class="m-dropzone__msg-title">إسقاط الملفات هنا أو انقر لتحميل.</h3>
                                 </div>

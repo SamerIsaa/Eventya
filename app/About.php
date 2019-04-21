@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class About extends Model
 {
     protected $fillable = [
-        'longitude',
+        'langitude',
         'latitude',
         'address',
         'email',
@@ -22,4 +22,9 @@ class About extends Model
         'polices_ar',
         'polices_en',
     ];
+
+    public static function lngLat(){
+        return About::select('latitude','langitude')->first();
+
+    }
 }

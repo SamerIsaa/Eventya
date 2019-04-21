@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\View\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
+        view()->composer('dashboard,layouts.scripts' , function ($view){
+            $view->with('location' , \App\About::lngLat());
+        });
     }
 }

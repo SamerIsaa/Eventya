@@ -39,5 +39,6 @@ dd($request);
         }
 
 //        if ($image = $request->file('image'))
+
     }
 }
