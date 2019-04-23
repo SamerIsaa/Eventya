@@ -19,7 +19,8 @@ class Supplier extends Authenticatable
         'receivable',
         'rate',
         'is_approved',
-        'password'
+        'password',
+        'rate'
     ];
     protected $hidden = [
         'password', 'remember_token'

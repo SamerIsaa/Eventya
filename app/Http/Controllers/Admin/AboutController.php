@@ -110,7 +110,7 @@ class AboutController extends Controller
 
     public function showLocationPage()
     {
-        $location = About::select('latitude' , 'langitude' , 'address')->first();
+        $location = About::select('latitude' , 'langitude' , 'address', 'address_en')->first();
         return view('dashboard.aboutUs.location' , compact('location'));
 
     }

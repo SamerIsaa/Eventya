@@ -7,12 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Catagory extends Model
 {
     protected $fillable = [
-        'name',
+        'name_ar',
         'name_en',
-        'photo_path'
+        'image_path'
     ];
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+
+    public static function catagories()
+    {
+        return Catagory::all();
     }
 }

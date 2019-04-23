@@ -29,9 +29,14 @@
                 {{ csrf_field() }}
                 <div class="m-portlet__body">
                     <div class="form-group m-form__group">
-                        <label for="exampleInputEmail1">العنوان</label>
-                        <input type="text" class="form-control m-input m-input--square" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="العنوان" name="address" value="{{ $location? $location->address : '' }}">
+                        <label for="exampleInputEmail1">العنوان باللغة العربية</label>
+                        <input type="text" class="form-control m-input m-input--square" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="العنوان باللغة العربية" name="address" value="{{ $location? $location->address : '' }}">
                     </div>
+                    <div class="form-group m-form__group">
+                        <label for="exampleInputEmail1">العنوان باللغة الإنجليزية</label>
+                        <input type="text" class="form-control m-input m-input--square" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="العنوان باللغة الإنجليزية" name="address_en" value="{{ $location? $location->address_en : '' }}">
+                    </div>
+
                     <div class="form-group m-form__group">
                         <label for="exampleInputEmail1">عنوان المنطقة</label>
                         <input type="text" class="form-control m-input m-input--square" id="searchmap" aria-describedby="emailHelp" placeholder="العنوان">

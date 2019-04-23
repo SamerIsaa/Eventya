@@ -1,0 +1,117 @@
+body{
+    direction: ltr;
+    background-color: #fafafa;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    font-family: 'helveticaneueltarabicroman1';  
+}
+/*Main Page*/
+.blue-header .header-btn{
+    display: inline-block;
+    float: right;
+}
+.main-section .row .form-div{
+    float: right;
+}
+.blue-header .header-info select{
+    background-position: 98% 42%;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../imgs/black-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 98% 42%;
+}
+.carousel-item{
+    margin-left: 6%;
+}
+
+
+/*صفحة البروفايل الشخصي*/
+.personal-porfile-page .bar-div p {
+    float: left;
+    width: 50%;
+}
+.personal-porfile-page .bar-div img {
+    float: right;
+    width: 50%;
+}
+.personal-porfile-page .a-float{
+    float: right;
+}
+
+/*صفحة التصنيفات*/
+.product-section .product-display .row .card-padding{
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+/*صفحة البروفايل مزود الخدمة*/
+.provider-profile-page .provider-profile-product .product-section .product-display .row .card-padding {
+    padding-left: 15px;
+    padding-right: 0px;
+}
+.provider-profile-page .provider-address i{
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+
+/*صفحة تسجيل الدخول*/
+.sign-in-page .sign-in-section .sign-in-option .remember-me{
+    float: left;
+}
+.sign-in-page .sign-in-section .sign-in-option .forget-password{
+    float: right;
+    text-align: right;
+}
+
+/*صفحة طلب المنتج 2*/
+.product-request-3 .color-padding{
+    padding-right: 10px;
+}
+
+/*صفحة طلب المنتج 3*/
+.product-request-2 .product-side .radio-float{
+    float: left;
+}
+.product-request-2 .product-side .money-float{
+    float: right;
+}
+.custom-radio {
+    padding-left: 35px;
+}
+.checkmark {
+    left: 0;
+}
+
+/*طلبات جديدة*/
+.new-request-page .requested-product .requested-product-info .price-para{
+    float: left;
+}
+.new-request-page .requested-product .requested-product-info .btn-div {
+    float: right;
+}
+
+/*طلبات قيد الحجز*/
+.service-provider-page .product-section .product-display .row .card-padding{
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.service-provider-page .form-section .lable-float{
+    float: left;
+}
+.service-provider-page .form-section .answer-float{
+    float: right;
+}
+.service-provider-page .form-section .info-div .info-lable .new-order{
+    padding-left: 7px;
+}
+
+.product-providers-page .product-providers-display .row .card-padding{
+    padding-right: 0px;
+    padding-left: 15px;
+}

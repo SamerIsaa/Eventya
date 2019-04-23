@@ -48,5 +48,13 @@ Route::group(['middleware' => 'auth:admin'] , function (){
     Route::resource('catagories' , 'Admin\CatagoryController')->except([
         'show' ,'destroy'
     ]);
-    Route::get('admins/{id}/delete' , 'Admin\AdminController@destroy')->name('admins.destroy');
+//    Route::get('catagories/{id}/delete' , 'Admin\AdminController@destroy')->name('admins.destroy');
+    Route::post('catagory/upload' , 'Admin\CatagoryController@upload')->name('catagories.uploadPhoto');
+
+    Route::resource('cities' , 'Admin\CityController')->except([
+        'show' ,'destroy'
+    ]);
+    Route::get('cities/{id}/delete' , 'Admin\CityController@destroy')->name('cities.destroy');
+    Route::get('products' , 'ProductController@index')->name('products.index');
+    Route::get('productsData','ProductController@ajaxDatatables')->name('products.data');
 });

@@ -10,6 +10,7 @@ class About extends Model
         'langitude',
         'latitude',
         'address',
+        'address_en',
         'email',
         'phone',
         'google_plus',
@@ -25,6 +26,12 @@ class About extends Model
 
     public static function lngLat(){
         return About::select('latitude','langitude')->first();
+
+    }
+
+    public static function footerData()
+    {
+        return About::select('about_us_ar','about_us_en' , 'email','phone','google_plus' , 'twitter' , 'facebook')->first();
 
     }
 }

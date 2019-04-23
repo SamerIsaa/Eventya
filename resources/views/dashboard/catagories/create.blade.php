@@ -44,9 +44,11 @@
                     <div class="form-group m-form__group row text-center">
                         <label class="col-form-label col-lg-3 col-sm-12 text-left">صورة التصنيف</label>
                         <div class="col-lg-4 col-md-9 col-sm-12 text-center">
-                            <div class="m-dropzone dropzone" action="{{ route('catagories.store') }}" id="m-dropzone-one">
+                            <div class="m-dropzone dropzone" action="{{url('/admin/catagory/upload')}}" id="m-dropzone-three">
                                 <div class="m-dropzone__msg dz-message needsclick">
                                     <h3 class="m-dropzone__msg-title">إسقاط الملفات هنا أو انقر لتحميل.</h3>
+                                        <input type="hidden" id="images" name="image_path" value="">
+
                                 </div>
                             </div>
                         </div>
