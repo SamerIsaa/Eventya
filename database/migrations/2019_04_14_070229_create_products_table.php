@@ -33,7 +33,7 @@ class CreateProductsTable extends Migration
 //      Forign Keys Config
 
             $table->foreign('supplier_id')->references('id')->on('suppliers')->onDelete('cascade');
-            $table->foreign('catagory_id')->references('id')->on('catagories')->onDelete('cascade');
+//            $table->foreign('catagory_id')->references('id')->on('catagories')->onDelete('cascade');
 
         });
     }

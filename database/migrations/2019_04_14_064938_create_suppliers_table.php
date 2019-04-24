@@ -18,14 +18,14 @@ class CreateSuppliersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('phone')->unique();
-            $table->string('photo_path');
+            $table->string('phone')->unique()->nullable();
+            $table->string('photo_path')->nullable();
             $table->float('receivable' , 10 , 2)->default(0);
-            $table->boolean('is_aproved');
-            $table->string('location');
-            $table->float('latitude', 10,5);
-            $table->float('longitude', 10,5);
-            $table->unsignedBigInteger('city_id');
+            $table->boolean('is_aproved')->default(0);
+            $table->string('location')->nullable();
+            $table->float('latitude', 10,5)->nullable();
+            $table->float('longitude', 10,5)->nullable();
+            $table->unsignedBigInteger('city_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
 

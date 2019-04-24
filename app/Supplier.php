@@ -13,12 +13,12 @@ class Supplier extends Authenticatable
         'phone',
         'longitude',
         'latitude',
-        'address',
+        'location',
         'photo_path',
         'info',
         'receivable',
         'rate',
-        'is_approved',
+        'is_aproved',
         'password',
         'rate'
     ];
