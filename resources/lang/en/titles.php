@@ -8,5 +8,7 @@ return [
     'eventya' => 'Eventya',
     'contactUs' => 'Contact Us',
     'aboutUs'   =>  'About Eventya',
-    'suppliers' => 'Service Suppliers',
+    'suppliers' => 'Services Suppliers',
+    'latestProducts'  => 'Latest Products',
+
 ];

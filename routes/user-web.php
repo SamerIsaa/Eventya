@@ -16,6 +16,7 @@
         Route::get('/', 'Controller@index')->name('index');
         Route::get('contact-us' , 'AboutController@contactUs')->name('contactEventya');
         Route::get('suppliers' , 'SupplierController@index')->name('servicesSuppliers');
+        Route::get('lastProducts' , 'ProductController@last')->name('lastProducts');
 //        /**
 //        * Web Contact US Page And Form
 //        */

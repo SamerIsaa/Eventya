@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="{{ route('index')}}">{{ trans('translation.index') }}</a></li>
                     <li><a href="#"></a>{{ trans('translation.latestOffers') }}</li>
-                    <li><a href="#"></a>{{ trans('translation.latestProducts') }}</li>
+                    <li><a href="{{ route('lastProducts') }}">{{ trans('translation.latestProducts') }}</a></li>
                     <li><a href="{{ route('contactEventya') }}">{{ trans('translation.contactUs') }}</a></li>
                     <li><a href="">{{ trans('translation.aboutUs') }}</a></li>
                     <li><a href="#"></a>{{ trans('translation.usagePolicy') }}</li>

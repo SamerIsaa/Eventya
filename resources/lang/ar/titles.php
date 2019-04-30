@@ -8,6 +8,7 @@ return [
     'eventya' => 'ايفنتيا',
     'contactUs' => 'تواصل معنا',
     'aboutUs'   =>  'عن ايفنتيا',
-    'suppliers' => 'مزودين الخدمة',
+    'suppliers' => 'مزودين الخدمات',
+    'latestProducts'  => 'أحدث المنتجات',
 
 ];

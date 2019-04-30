@@ -12,19 +12,16 @@ class CheckLangMiddleware
      */
     public function handle($request, Closure $next)
     {
-//return request()->ajax();
         if ($request->get('locale') == 'en' or $request->get('locale') == 'ar') {
             app()->setLocale($request->get('locale'));
             session()->put('locale', $request->get('locale'));
         }
-        else{
+        elseif (session('locale')){
             app()->setLocale(session('locale'));
+        }else{
+            app()->setLocale('ar');
         }
-//
-//
-////        if(session()->has('locale')) {
-////            app()->setLocale(session()->get('locale'));
-////        }z
+
         return $next($request);
     }
 }

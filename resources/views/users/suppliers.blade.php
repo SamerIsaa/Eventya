@@ -110,13 +110,15 @@
 
 
                 <nav class="text-center" aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">السابق</a></li>
-                        <li class="page-item"><a class="page-link page-no" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link page-no" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link page-no" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">التالي</a></li>
-                    </ul>
+                    {{ $suppliers->links() }}
+
+                    {{--                    <ul class="pagination">--}}
+{{--                        <li class="page-item"><a class="page-link" href="#">السابق</a></li>--}}
+{{--                        <li class="page-item"><a class="page-link page-no" href="#">1</a></li>--}}
+{{--                        <li class="page-item"><a class="page-link page-no" href="#">2</a></li>--}}
+{{--                        <li class="page-item"><a class="page-link page-no" href="#">3</a></li>--}}
+{{--                        <li class="page-item"><a class="page-link" href="#">التالي</a></li>--}}
+{{--                    </ul>--}}
                 </nav>
             </div>
         </div>
