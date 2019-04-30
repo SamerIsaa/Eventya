@@ -49,6 +49,14 @@ return [
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
+        ],
+        'supplier' => [
+            'driver' => 'session',
+            'provider' => 'suppliers',
+        ],
+        'payer' => [
+            'driver' => 'session',
+            'provider' => 'payers',
         ]
     ],
 
@@ -78,6 +86,15 @@ return [
          'admins' => [
              'driver' => 'database',
              'table' => 'admins',
+         ],
+
+         'suppliers' => [
+             'driver' => 'database',
+             'table' => 'suppliers',
+         ],
+         'payers' => [
+             'driver' => 'database',
+             'table' => 'payers',
          ],
     ],
 

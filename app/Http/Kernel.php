@@ -20,6 +20,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\CheckLangMiddleware::class,
+
     ];
 
     /**
@@ -62,6 +63,9 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'setLocale'  => \App\Http\Middleware\CheckLangMiddleware::class,
+        'userAuth'  => \App\Http\Middleware\UserAuthMiddleware::class,
+        'supplierAuth'  => \App\Http\Middleware\SupplierAuthMiddleware::class,
+        'payerAuth'  => \App\Http\Middleware\PayerAuthMiddleware::class,
 
     ];
 

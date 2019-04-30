@@ -35,7 +35,8 @@ class AdminAuthController extends Controller
         if (Auth::guard('admin')->attempt($credentials)){
             return redirect()->intended(route('admin.dashboard'));
         }else{
-            return redirect('admin.showLogin');
+            session()->flash('credentials' , trans('messages.credentialsError'));
+            return redirect(route('admin.showLogin'));
         }
 
     }

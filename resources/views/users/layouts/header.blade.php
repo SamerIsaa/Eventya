@@ -1,20 +1,30 @@
 <div class="blue-header">
     <div class="container">
-        <div class="header-info">
-            <img class="" src="{{ asset('userAssets/imgs/man-flu-2.png') }}" alt="">
-            <select class="">
-                <option>اسم المستخدم</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+        <div class="header-info text-center" onchange="dropDownActions(this.value);">
+            @if(auth()->guard('supplier')->user() != null || auth()->guard('payer')->user() != null)
+                <img class="" src="{{ asset('userAssets/imgs/man-flu-2.png') }}" alt="">
+                <select id="userMenu">
+                    <option >
+                        @if(auth()->guard('payer')->user())
+                            {{ auth()->guard('payer')->user()->name }}
+                        @else
+                            {{ auth()->guard('supplier')->user()->name }}
+                        @endif
+                    </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="logout">{{ trans('titles.logout') }}</option>
+                </select>
+            @else
+                <button class="btn search-btn" id="loginBtn" onclick="window.location = '{{ route("user.login") }} '">{{ trans('translation.login') }}</button>
+            @endif
 {{--            <select class="">--}}
 {{--                <option>USD $</option>--}}
 {{--                <option>euro &euro;</option>--}}
 {{--            </select>--}}
 
-            <select class="" name="lang" onchange="changeLang(this.value)">
+            <select class="" name="lang" onchange="changeLang(value)">
                 <option value="ar" {{ \App::getLocale()== 'ar'?"selected" :""}}>{{ trans('translation.ar') }}</option>
                 <option value="en" {{ \App::getLocale()== 'en'?"selected" :""}}>{{ trans('translation.en') }}</option>
             </select>
@@ -59,3 +69,5 @@
         </div>
     </div>
 </nav>
+
+

@@ -2852,3 +2852,8 @@ select {
     background-repeat: no-repeat;
     background-position: 2% 42%;
   }
+
+#loginBtn{
+    color: #FFF;
+    border: 1px solid #000;
+}

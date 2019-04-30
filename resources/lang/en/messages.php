@@ -14,4 +14,6 @@ return [
     'no_orders'          => 'You have no orders yet',
     'no_orders_for_status'          => 'You have no orders yet for this status',
     'statusChanged'          => 'You Order Status Changed',
+    'notFoundEmail'         => 'There is no account for this email',
+    'credentialsError'      => 'These credentials do not match our records '
 ];

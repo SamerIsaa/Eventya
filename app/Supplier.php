@@ -33,4 +33,9 @@ class Supplier extends Authenticatable
     {
         return $this->hasMany(Order::class);
     }
+
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
 }

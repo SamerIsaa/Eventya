@@ -12,4 +12,9 @@ class City extends Model
     {
         return City::select('name_ar' , 'name_en')->get();
     }
+
+    public function suppliers()
+    {
+        return $this->hasMany(Supplier::class);
+    }
 }

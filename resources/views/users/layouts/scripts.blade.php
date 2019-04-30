@@ -25,6 +25,12 @@
             }
         });
     }
+
+    $('select#userMenu').on('change', function() {
+        if (this.value === "logout"){
+            window.location = '{{ route('user.logout') }}'
+        }
+    });
 </script>
 
 <script>

@@ -21,11 +21,11 @@ class CreatePayersTable extends Migration
             $table->decimal('longitude')->default(0);
             $table->decimal('latitude')->default(0);
             $table->string('address')->nullable();
-            $table->date('birthDate');
+            $table->date('birthDate')->nullable();
             $table->string('photo_path')->nullable();
             $table->float('payments' , 10 , 2)->default(0);
             $table->string('password');
-            $table->unsignedBigInteger('city_id');
+            $table->unsignedBigInteger('city_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
 

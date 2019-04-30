@@ -63,6 +63,12 @@
                             @endcomponent
                         @endforeach
                     @endif
+
+                    @if(session()->has('credentials'))
+                        @component('alerts.danger')
+                            {{ session('credentials') }}
+                        @endcomponent
+                    @endif
                     <form class="m-login__form m-form" action="{{ route('admin.login') }}" method="POST">
                         {{ csrf_field() }}
                         <div class="form-group m-form__group">

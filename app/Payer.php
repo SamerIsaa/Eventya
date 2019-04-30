@@ -15,6 +15,7 @@ class Payer extends Authenticatable
     protected $fillable = [
         'name', 'email','phone','password','longitude','latitude','address','birth_date','photo_path','payments','city_id'
     ];
+
     /**
      * The attributes that should be hidden for arrays.
      *
