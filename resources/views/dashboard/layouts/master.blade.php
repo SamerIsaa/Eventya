@@ -16,6 +16,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- begin::Head -->
     @include('dashboard.layouts.style')
+    @csrf
 {{--<!-- end::Head --}}
 
 	<!-- begin::Body -->
@@ -49,26 +50,16 @@ License: You must have a valid license purchased only from themeforest(the above
     @include('dashboard.layouts.footer')
     <!-- end::Footer -->
 </div>
-
 <!-- end:: Page -->
-
-
-
-
 <!-- begin::Scroll Top -->
 <div id="m_scroll_top" class="m-scroll-top">
     <i class="la la-arrow-up"></i>
 </div>
-
 <!-- end::Scroll Top -->
-
-
-
-
 <!--begin::Base Scripts -->
     @include('dashboard.layouts.scripts')
+    @yield('js')
 <!--end::Page Snippets -->
 </body>
-
 <!-- end::Body -->
 </html>

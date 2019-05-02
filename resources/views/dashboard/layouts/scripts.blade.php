@@ -23,7 +23,6 @@
 <script src="{{ asset('dashboardAssets/demo/default/custom/crud/forms/widgets/summernote.js') }}" type="text/javascript"></script>
 <script src="{{asset('dashboardAssets/app/js/dashboard.js')}}" type="text/javascript"></script>
 <script>
-
         var GoogleMapsDemo = {
             init: function () {
                 var location  = {lat: parseFloat( "{{ $location->latitude }}" ), lng: parseFloat( "{{ $location->langitude }}" )};

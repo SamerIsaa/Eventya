@@ -178,10 +178,21 @@
             <a href="{{ route('products.index') }}" class="m-menu__link ">
                 <i class="m-menu__link-icon flaticon-line-graph"></i>
                 <span class="m-menu__link-title">
-                                    <span class="m-menu__link-wrap">
-                                        <span class="m-menu__link-text">المنتجات</span>
-                                    </span>
-                                </span>
+                    <span class="m-menu__link-wrap">
+                        <span class="m-menu__link-text">المنتجات</span>
+                    </span>
+                </span>
+            </a>
+        </li>
+
+        <li class="m-menu__item" aria-haspopup="true">
+            <a href="/dashboard/supplier) }}" class="m-menu__link ">
+                <i class="m-menu__link-icon flaticon-line-graph"></i>
+                <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                        <span class="m-menu__link-text">الموردين</span>
+                    </span>
+                </span>
             </a>
         </li>
 

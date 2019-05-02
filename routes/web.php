@@ -38,6 +38,15 @@ Route::group(['middleware' => 'auth:admin'] , function (){
     Route::get('about/location' , 'Admin\AboutController@showLocationPage')->name('about.location');
     Route::post('about/location' , 'Admin\AboutController@updateLocation')->name('about.location.update');
 
+    Route::prefix('/supplier')->group(function () {
+        Route::get('/', 'SupplierController@index');
+        // Route::get('/create', 'SupplierController@create');
+        // Route::post('/', 'SupplierController@store');
+        Route::get('/datatable', 'SupplierController@datatable');
+        Route::get('/{id}', 'SupplierController@show');
+        Route::post('/delete', 'SupplierController@destroy');
+        Route::post('/approved', 'SupplierController@approve');
+    });
 
     Route::resource('admins' , 'Admin\AdminController')->except([
        'show' ,'destroy'

@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
     <!--begin::Web font -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <style>
+        body,.m-portlet__head-text,.m-subheader__title.m-subheader__title--separator{
+            font-family: 'Cairo', sans-serif !important;
+        }
+        .m-body .m-content{
+            overflow:hidden;
+        }
+    </style>
+    @yield('css')
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
@@ -35,6 +45,8 @@
 
     <link href="{{ asset('dashboardAssets/demo/default/base/style.bundle.rtl.css') }}" rel="stylesheet" type="text/css" />
 
-    e<!-- nd::Base Styles -->
+    <!-- nd::Base Styles -->
     <link rel="shortcut icon" href="{{ asset('dashboardAssets/demo/default/media/img/logo/favicon.ico') }}" />
+    <link href="{{asset('dashboardAssets/vendors/custom/datatables/datatables.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
+
 </head>
