@@ -159,7 +159,6 @@
                                     timer: 3000
                                 }).then(
                                     function () {
-                                        // location.reload(true);
                                         table.ajax.reload();
                                     }).catch(swal.noop)
                             }
