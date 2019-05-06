@@ -16,16 +16,16 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('supplier_id');
-            $table->unsignedBigInteger('catagory_id');
+            $table->unsignedBigInteger('catagory_id')->nullable();
 
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->float('price_per_hour',6,2)->default(0);
             $table->float('offer_price_per_hour',6,2)->default(0);
             $table->string('currency')->nullable();
             $table->boolean('is_offer')->default(0);
             $table->float('tax',5,2)->default(0);
             $table->longText('condition')->nullable();
-            $table->string('color');
+            $table->string('color')->nullable();
             $table->float('rate',2,1)->default(0);
             $table->timestamps();
 

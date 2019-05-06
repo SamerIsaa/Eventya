@@ -8,11 +8,6 @@ use Yajra\DataTables\DataTables;
 
 class SupplierController extends Controller
 {
-    // public function index()
-    // {
-    //     $suppliers = Supplier::select('name', 'rate' ,'photo_path')->paginate(12);
-    //     return view('users.suppliers' , compact('suppliers') );
-    // }
 
     public function index(){
         return view('dashboard.supplier.index');
@@ -28,8 +23,8 @@ class SupplierController extends Controller
                                      <i class='flaticon-signs-1'></i>
                                 </a>
                                 <div class='dropdown-menu dropdown-menu-right'>
-                                        <a class='dropdown-item' href='/admin/supplier/$model->id'><i class='flaticon-search-1'></i>تفاصيل</a>"
-                                        .($model->is_aproved == 0 ? "<a class='dropdown-item approved' href='' data-id='$model->id' ><i class='flaticon-search-1'></i>قبول المورد</a>":"").
+                                        <a class='dropdown-item' href='".  route('dashboard.supplier.show' ,$model->id ) . "'><i class='flaticon-info'></i>تفاصيل</a>"
+                                        .($model->is_aproved == 0 ? "<a class='dropdown-item approved' href='' data-id='$model->id' ><i class='fa fa-thumbs-up'></i>قبول المورد</a>":"").
                                 "</div>
                         </span>";
             })
@@ -52,8 +47,17 @@ class SupplierController extends Controller
             return abort(404);
         }
         $supplier->update([
-            'is_aproved' => 1,
+            'is_aproved' => $request['is_aproved'],
         ]);
-        // return redirect()->back()->with('success',' تم الحذف بنجاح ');
+    }
+
+
+    public function supplierIndex()
+    {
+        $supplier = Supplier::with(['orders' , 'city'])->find(auth('supplier')->id());
+        $products = $supplier->products()->paginate(12);
+
+        return view('users.suppliers.index' , compact(['supplier' , 'products']));
+
     }
 }

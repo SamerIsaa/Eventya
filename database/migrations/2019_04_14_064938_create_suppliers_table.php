@@ -20,6 +20,7 @@ class CreateSuppliersTable extends Migration
             $table->string('password');
             $table->string('phone')->unique()->nullable();
             $table->string('photo_path')->nullable();
+            $table->string('address')->nullable();
             $table->float('receivable' , 10 , 2)->default(0);
             $table->boolean('is_aproved')->default(0);
             $table->string('location')->nullable();

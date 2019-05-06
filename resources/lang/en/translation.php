@@ -18,6 +18,7 @@ return [
 //    End   Language Menu -------------------------------
 // Start Index Page -------------------------------------
     'catagories' => 'Catagories',
+    'catagory' => 'Catagory',
     'newsletter' =>'Subscribe to the newsletter',
     'subscription' =>'Subscription',
 
@@ -60,7 +61,31 @@ return [
     'send'  => 'Send',
     'enterCode' => 'Reset Code',
     'code'      => 'Code',
-    'invalidCode'      => 'The verification code you entered is invalid',
+'invalidCode'      => 'The verification code you entered is invalid',
 
+// End   Log  In Page -------------------------------------
+
+/// // Start Suppliers Pages -------------------------------------
+
+    'supplier_index'        => 'Index',
+    'supplier_addProduct'   => 'Add New Product',
+    'productName'   => 'Product Name',
+    'price'   => 'Price',
+    'priceOffer'   => 'Offer Price',
+    'dropZoneDesc'  => 'Please Upload Images for this product',
+    'add'   => 'Add',
+    'productNamePlaceHolder'   => 'Product Name',
+    'addProduct'   => 'Add Product',
+    'addOffer'   => 'Add Offer',
+    'editOffer'   => 'Edit Offer',
+    'editProduct'   => 'Edit Product',
+    'condition'   => 'Rent Condition',
+    'edit'   => 'Edit',
+    'totalReceivables'   => 'Total Receivables',
+    'productCount'   => 'Product Count',
+    'totalOrders'   => 'Total Orders',
+    'newOrders'   => 'New Orders',
+    'reservationRequests'   => 'Reservation Requests',
+    'endedOrders'   => 'Ended Orders',
 // End   Log  In Page -------------------------------------
 ];

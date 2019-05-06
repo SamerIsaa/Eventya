@@ -47,8 +47,24 @@
             /*
              * Start Supplier Route Group
              * */
+            Route::get('supplier', function (){
+                return redirect()->route('supplier.index');
+            });
+            Route::middleware('supplierAuth')->prefix('supplier')->group( function (){
 
-            Route::group(['middleware' => 'supplierAuth'] , function (){
+                Route::get('index' , 'SupplierController@supplierIndex')->name('supplier.index');
+                Route::post('product/images' , 'ProductImageController@store')->name('productImages');
+                Route::resource('product' , 'ProductController');
+                Route::get('offer' , 'ProductController@createOffer')->name('product.addOffer');
+                Route::post('offer' , 'ProductController@storeOffer')->name('product.storeOffer');
+                Route::get('offer/{id}/edit' , 'ProductController@editOffer')->name('product.editOffer');
+                Route::put('offer/{id}' , 'ProductController@updateOffer')->name('product.updateOffer');
+
+                Route::get('debug' , function (){
+                    $supplier = auth()->guard('supplier')->user();
+                    dd(\App\Supplier::find($supplier->id)->city);
+                });
+
 
 
 
@@ -78,10 +94,7 @@
         });
 
 
-        Route::get('debug' , function (){
-            $supplier = auth()->guard('supplier')->user();
-            dd(\App\Supplier::find($supplier->id)->city);
-        });
+
 
     });
 ?>

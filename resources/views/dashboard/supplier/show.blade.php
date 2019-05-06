@@ -69,7 +69,7 @@
                                                 <div class="mr-2">
                                                         <span class="m-switch m-switch--outline m-switch--icon m-switch--success">
                                                             <label>
-                                                                <input type="checkbox" disabled value="{{$supplier->id}}" @if($supplier->id == 1){{"checked"}}@endif>
+                                                                <input type="checkbox" id="approve_supplier" value="{{$supplier->id}}" @if($supplier->is_aproved == 1){{"checked"}}@endif>
                                                                 <span></span>
                                                             </label>
                                                         </span>
@@ -79,9 +79,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="m-portlet__foot m-portlet__foot--fit">
-                            <div class="m-form__actions m-form__actions">
-                                <a href="/admin/supplier" class="btn btn-info"> {{trans('supplier.back')}}</a>
+                        <div class="m-portlet__foot m-portlet__foot--fit ">
+                            <div class="m-form__actions m-form__actions text-right">
+                                <a href="{{ route('dashboard.supplier.index') }}" class="btn btn-info "> {{trans('supplier.back')}}</a>
                             </div>
                         </div>
                     </div>
@@ -100,4 +100,57 @@
             padding: 2.2rem 2.2rem;
         }
     </style>
+@stop()
+
+@section('js')
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            //set initial state.
+            $("#approve_supplier").change(function() {
+                // alert(this.checked )
+                var approve = this.checked?1:0;
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('[name="_token"]').attr('value')
+                    },
+                    type: "post",
+                    url: "{{url('/admin/supplier/approved')}}",
+                    data: {
+                        id: this.value ,
+                        is_aproved : approve
+
+                    },
+                    success: function (data) {
+                        if (approve){
+                            swal({
+                                title: "تمت الموافقة",
+                                text: "تمت الموافقة بنجاح .",
+                                type: "success",
+                                timer: 3000
+                            }).then(
+                                function () {
+                                    table.ajax.reload();
+                                }).catch(swal.noop)
+                        }else{
+                            swal({
+                                title: "تم التعطيل",
+                                text: "تمت تعطيل الحساب بنجاح .",
+                                type: "success",
+                                timer: 3000
+                            }).then(
+                                function () {
+                                    table.ajax.reload();
+                                }).catch(swal.noop)
+                        }
+                    }
+                })
+
+
+            });
+        });
+
+    </script>
 @stop()

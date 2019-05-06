@@ -2,6 +2,7 @@
 <html>
 
     @include('users.layouts.style')
+    @yield('css')
 
 <body>
 
@@ -15,6 +16,7 @@
 @include('users.layouts.footer')
 <!-- JavaScript -->
 @include('users.layouts.scripts')
+@yield('js')
 </body>
 
 </html>

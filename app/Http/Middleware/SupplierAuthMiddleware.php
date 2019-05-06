@@ -15,7 +15,7 @@ class SupplierAuthMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (auth()->guard('supplier')->check()){
+        if (auth()->guard('supplier')->check() && auth()->guard('supplier')->user()->is_aproved){
 
             return $next($request);
         }
