@@ -18,6 +18,7 @@ return [
 //    End   Language Menu -------------------------------
 // Start Index Page -------------------------------------
     'catagories' => 'التصنيفات',
+    'catagory' => 'التصنيف',
     'newsletter' =>'اشترك في النشرة الإخبارية',
     'subscription' =>'اشتراك',
 
@@ -62,6 +63,31 @@ return [
     'enterCode' => 'رمز اعادة التعيين',
     'code'      => 'رمز التحققق',
     'invalidCode'      => 'رمز التحققق الذي قمت بادخاله غير صحيح',
+
+// End   Log  In Page -------------------------------------
+
+/// // Start Suppliers Pages -------------------------------------
+
+    'supplier_index'        => 'الرئيسية',
+    'supplier_addProduct'   => 'اضافة منتج جديد',
+    'productName'   => 'إسم المنتج',
+    'price'   => 'السعر',
+    'priceOffer'   => 'سعر العرض',
+    'dropZoneDesc'  => 'الرجاء رفع الصورة الخاصة بالمنتج',
+    'add'   => 'اضافة',
+    'productNamePlaceHolder'   => 'اسم المنتج',
+    'addProduct'   => 'اضافة منتج',
+    'addOffer'   => 'اضافة عرض',
+    'editOffer'   => 'تعديل عرض',
+    'editProduct'   => 'تعديل منتج',
+    'condition'   => 'شروط الاستئجار',
+    'edit'   => 'تعديل',
+    'totalReceivables'   => 'اجمالي المستحقات',
+    'productCount'   => 'عدد منتجاتي',
+    'totalOrders'   => 'اجمالي الطلب',
+    'newOrders'   => 'طلبات جديدة',
+    'reservationRequests'   => 'طلبات قيد الحجز',
+    'endedOrders'   => 'طلبات منتهية',
 
 // End   Log  In Page -------------------------------------
 ];

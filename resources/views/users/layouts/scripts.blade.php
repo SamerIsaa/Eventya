@@ -28,7 +28,9 @@
 
     $('select#userMenu').on('change', function() {
         if (this.value === "logout"){
-            window.location = '{{ route('user.logout') }}'
+            window.location = '{{ route('user.logout') }}';
+        }else if (this.value === "indexSupplier"){
+            window.location = '{{ route('supplier.index') }}';
         }
     });
 </script>

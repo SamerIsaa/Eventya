@@ -11,7 +11,11 @@
                             {{ auth()->guard('supplier')->user()->name }}
                         @endif
                     </option>
-                    <option value="2">2</option>
+
+                    @if(auth()->guard('supplier')->user())
+                        <option value="indexSupplier">{{ trans('translation.supplier_index') }}</option>
+
+                    @endif
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="logout">{{ trans('titles.logout') }}</option>
@@ -19,6 +23,7 @@
             @else
                 <button class="btn search-btn" id="loginBtn" onclick="window.location = '{{ route("user.login") }} '">{{ trans('translation.login') }}</button>
             @endif
+
 {{--            <select class="">--}}
 {{--                <option>USD $</option>--}}
 {{--                <option>euro &euro;</option>--}}

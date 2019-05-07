@@ -20,7 +20,8 @@ class Supplier extends Authenticatable
         'rate',
         'is_aproved',
         'password',
-        'rate'
+        'rate',
+        'address'
     ];
     protected $hidden = [
         'password', 'remember_token'

@@ -9,11 +9,6 @@ use Yajra\DataTables\DataTables;
 
 class SupplierController extends Controller
 {
-    // public function index()
-    // {
-    //     $suppliers = Supplier::select('name', 'rate' ,'photo_path')->paginate(12);
-    //     return view('users.suppliers' , compact('suppliers') );
-    // }
 
     public function index(){
         return view('dashboard.supplier.index');
@@ -60,9 +55,18 @@ class SupplierController extends Controller
             return abort(404);
         }
         $supplier->update([
-            'is_aproved' => 1,
+            'is_aproved' => $request['is_aproved'],
         ]);
-        // return redirect()->back()->with('success',' تم الحذف بنجاح ');
+    }
+
+
+    public function supplierIndex()
+    {
+        $supplier = Supplier::with(['orders' , 'city'])->find(auth('supplier')->id());
+        $products = $supplier->products()->paginate(12);
+
+        return view('users.suppliers.index' , compact(['supplier' , 'products']));
+
     }
 
     public function products(){
@@ -77,7 +81,7 @@ class SupplierController extends Controller
                 return 'عرض';
             }else{
                 return 'خارج العرض';
-            } 
+            }
         })
        ->editColumn('Actions',function ($model){
                return "<span class='dropdown center-block'>

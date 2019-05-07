@@ -39,9 +39,7 @@ Route::group(['middleware' => 'auth:admin'] , function (){
     Route::post('about/location' , 'Admin\AboutController@updateLocation')->name('about.location.update');
 
     Route::prefix('/supplier')->group(function () {
-        Route::get('/', 'SupplierController@index');
-        // Route::get('/create', 'SupplierController@create');
-        // Route::post('/', 'SupplierController@store');
+        Route::get('/', 'SupplierController@index')->name('dashboard.supplier.index');
         Route::get('/datatable', 'SupplierController@datatable');
         Route::get('/{id}', 'SupplierController@show');
         Route::get('/{id}/products', 'SupplierController@products');

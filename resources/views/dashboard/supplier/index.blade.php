@@ -42,20 +42,20 @@
             <div class="m-portlet__body">
                 <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>#</th>
                             <th>{{trans('supplier.name')}}</th>
                             <th>{{trans('supplier.email')}}</th>
                             <th>{{trans('supplier.phone')}}</th>
                             <th>{{trans('supplier.rate')}}</th>
-                            <th> {{trans('supplier.is_approved')}}</th>
                             <th> {{trans('supplier.receivable')}} </th>
+                            <th> {{trans('supplier.is_approved')}} </th>
                             <th> {{trans('supplier.city')}} </th>
                             <th>{{trans('supplier.action')}}</th>
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody class="text-center">
                     </tbody>
                 </table>
             </div>
@@ -80,8 +80,8 @@
                     { data: "email"           , name:'email'},
                     { data: "phone"           , name:'phone'},
                     { data: "rate"           , name:'rate'},
-                    { data: 'is_aproved' ,     name:'is_aproved'},
                     { data: 'receivable'      , name:'receivable'},
+                    { data: 'is_aproved'      , name:'is_aproved'},
                     { data: 'city.name_ar'      , name:'city.name_ar'},
                     { data: 'Actions'         , name:'Actions'},
                 ]
@@ -150,7 +150,11 @@
                             },
                             type: "post",
                             url: "{{url('/admin/supplier/approved')}}",
-                            data: {id: id},
+                            data: {
+                                id: id ,
+                                is_aproved : 1
+
+                            },
                             success: function (data) {
                                 swal({
                                     title: "تمت الموافقة",
