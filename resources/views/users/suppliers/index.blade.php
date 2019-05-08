@@ -23,15 +23,15 @@
                                     class="lable-float">{{ trans('translation.totalOrders') }}</span><span
                                     class="answer-float">{{ $supplier->orders->count() }}</span></div>
                         <div class="info-lable">
-                            <span class="lable-float">{{ trans('translation.newOrders') }}</span>
+                            <a href="{{ route('newOrders')  }}"><span class="lable-float">{{ trans('translation.newOrders') }}</span></a>
                             <span class="answer-float new-order">{{ $supplier->orders->where('status_id' , 1)->count() }}</span>
                         </div>
                         <div class="info-lable">
-                            <span class="lable-float">{{ trans('translation.reservationRequests') }}</span>
+                            <a href="{{ route('reservationOrders')  }}"><span class="lable-float">{{ trans('translation.reservationRequests') }}</span></a>
                             <span class="answer-float">{{ $supplier->orders->where('status_id' , 2)->count() }}</span>
                         </div>
                         <div class="info-lable">
-                            <span class="lable-float">{{ trans('translation.endedOrders') }}</span>
+                            <a href="{{ route('endedOrders') }}"><span class="lable-float">{{ trans('translation.endedOrders') }}</span></a>
                             <span class="answer-float">{{ $supplier->orders->where('status_id' , 3)->count() }}</span>
                         </div>
                         <div class="clearfix"></div>
@@ -286,11 +286,11 @@
                             <ul class="pagination">
                                 {{ $products->links() }}
 
-                                {{--                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>--}}
-                                {{--                                <li class="page-item"><a class="page-link page-no" href="#">1</a></li>--}}
-                                {{--                                <li class="page-item"><a class="page-link page-no" href="#">2</a></li>--}}
-                                {{--                                <li class="page-item"><a class="page-link page-no" href="#">3</a></li>--}}
-                                {{--                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>--}}
+{{--                                <li class="page-item"><a class="page-link" href="#">السابق</a></li>--}}
+{{--                                <li class="page-item"><a class="page-link page-no" href="#">1</a></li>--}}
+{{--                                <li class="page-item"><a class="page-link page-no" href="#">2</a></li>--}}
+{{--                                <li class="page-item"><a class="page-link page-no" href="#">3</a></li>--}}
+{{--                                <li class="page-item"><a class="page-link" href="#">التالي</a></li>--}}
                             </ul>
                         </nav>
                     </div>

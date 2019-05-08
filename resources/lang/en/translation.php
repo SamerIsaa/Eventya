@@ -11,6 +11,11 @@ return [
     'latestProducts' =>'Latest Products',
     'usagePolicy' =>'Usage Policy',
     'downloadApps' =>'Download App',
+    'quickLinks' =>'Quick links',
+    'subscribeNewsletter' =>'Subscribe to the newsletter',
+    'subscribe' =>'Subscribe',
+
+
 //    End   Menu item ----------------------------------
 //    Start Language Menu -------------------------------
     'ar' => 'Arabic',
@@ -85,7 +90,18 @@ return [
     'productCount'   => 'Product Count',
     'totalOrders'   => 'Total Orders',
     'newOrders'   => 'New Orders',
-    'reservationRequests'   => 'Reservation Requests',
+    'reservationRequests'   => 'Reservation Orders',
     'endedOrders'   => 'Ended Orders',
+    'payerDeliver'   => 'Deliver to the customer\'s location',
+    'orderNumber'   => 'Order Number',
+    'quentity'   => 'Quentity',
+    'color'   => 'Color',
+    'notes'   => 'Notes',
+    'totalPrice'   => 'Total Price',
+    'acceptOrder'   => 'Accept',
+    'rejectionOrder'   => 'Rejection',
+    'reservationFrom'   => 'Reservation From',
+    'reservationTo'   => 'Reservation To',
+
 // End   Log  In Page -------------------------------------
 ];

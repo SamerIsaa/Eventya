@@ -60,6 +60,12 @@
                 Route::get('offer/{id}/edit' , 'ProductController@editOffer')->name('product.editOffer');
                 Route::put('offer/{id}' , 'ProductController@updateOffer')->name('product.updateOffer');
 
+
+                Route::get('new-orders' , 'OrderController@newOrders')->name('newOrders');
+                Route::get('reservation-orders' , 'OrderController@reservationOrders')->name('reservationOrders');
+                Route::get('ended-orders' , 'OrderController@endedOrders')->name('endedOrders');
+                Route::get('order/{id}/accept' , 'OrderController@accept')->name('order.accept');
+                Route::get('order/{id}/reject' , 'OrderController@reject')->name('order.reject');
                 Route::get('debug' , function (){
                     $supplier = auth()->guard('supplier')->user();
                     dd(\App\Supplier::find($supplier->id)->city);

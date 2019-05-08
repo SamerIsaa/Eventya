@@ -11,6 +11,10 @@ return [
     'latestProducts' =>'أحدث المنتجات',
     'usagePolicy' =>'سياسة الاستخدام',
     'downloadApps' =>'حمل التطبيق',
+    'quickLinks' =>'روابط سريعة',
+    'subscribeNewsletter' =>'اشترك بالنشرة البريدية',
+    'subscribe' =>'اشترك',
+
 //    End   Menu item ----------------------------------
 //    Start Language Menu -------------------------------
     'ar' => 'العربية',
@@ -88,6 +92,17 @@ return [
     'newOrders'   => 'طلبات جديدة',
     'reservationRequests'   => 'طلبات قيد الحجز',
     'endedOrders'   => 'طلبات منتهية',
+    'payerDeliver'   => 'توصيل لمكان العميل',
+    'orderNumber'   => 'رقم الحجز',
+    'quentity'   => 'الكمية',
+    'color'   => 'اللون',
+    'notes'   => 'ملاحظات',
+    'totalPrice'   => 'السعر الإجمالي',
+    'acceptOrder'   => 'قبول الطلب',
+    'rejectionOrder'   => 'رفض الطلب',
+    'reservationFrom'   => 'الحجز من',
+    'reservationTo'   => 'الحجز الى',
+
 
 // End   Log  In Page -------------------------------------
 ];

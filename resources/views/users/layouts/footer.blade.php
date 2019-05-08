@@ -19,7 +19,7 @@
                 <a href="{{ $about->facebook }}" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="col-6 col-md-2 second-col sm-padding">
-                <h3>روابط سريعة</h3>
+                <h3>{{ trans('translation.quickLinks') }}</h3>
                 <ul>
                     <li><a href="{{ route('index')}}">{{ trans('translation.index') }}</a></li>
                     <li><a href="#"></a>{{ trans('translation.latestOffers') }}</li>
@@ -30,13 +30,13 @@
                 </ul>
             </div>
             <div class="col-6 col-md-3 third-col sm-padding">
-                <h3>حمل التطبيق</h3>
+                <h3>{{ trans('translation.downloadApps') }}</h3>
                 <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية</p>
                 <a href="#" class="app-store">App Store<i class="fab fa-apple"></i></a>
                 <a href="#" class="google-play">Google Play<i class="fab fa-google-play"></i></a>
             </div>
             <div class="col-md-3 col-sm-12 fourth-col sm-padding">
-                <h3>اشترك بالنشرة البريدية</h3>
+                <h3>{{ trans('translation.subscribeNewsletter') }}</h3>
                 <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال
                     بعض النوادر أو الكلمات</p>
                 <form>
@@ -44,7 +44,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail1"
                                aria-describedby="emailHelp" placeholder="البريد الالكتروني">
                     </div>
-                    <button type="submit" class="btn btn-primary">اشتراك</button>
+                    <button type="submit" class="btn btn-primary">{{ trans('translation.subscribe') }}</button>
                 </form>
             </div>
         </div>

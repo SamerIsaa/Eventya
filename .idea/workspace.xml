@@ -8,28 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="328da4d9-706a-45c1-9fbb-3ad988e1b749" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductImageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SupplierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SupplierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/SupplierAuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/SupplierAuthMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ProductImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ProductImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Supplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Supplier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_14_064938_create_suppliers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_14_064938_create_suppliers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_14_070229_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_14_070229_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/23227142_1468706499894390_628826474_n_1556020783.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/translation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/translation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/translation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/translation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/supplier/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/supplier/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/supplier/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/supplier/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/layouts/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/layouts/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/suppliers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/suppliers/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user-web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user-web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +30,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/user-web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="72" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrderController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+              <folding>
+                <element signature="e#40#54#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/orders/endedOrders.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="166" selection-start-line="12" selection-start-column="166" selection-end-line="12" selection-end-column="166" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -54,42 +69,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
+            <state relative-caret-position="252">
+              <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SupplierController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/orders/newOrders.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="2" selection-end-column="5" />
-              <folding>
-                <element signature="e#172#251#0#PHP" />
-                <element signature="e#257#1357#0#PHP" />
-                <element signature="e#1363#1616#0#PHP" />
-                <element signature="e#1622#1887#0#PHP" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="164" selection-start-line="10" selection-start-column="164" selection-end-line="10" selection-end-column="164" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/orders/reservationOrders.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="154" column="48" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="48" />
-              <folding>
-                <element signature="e#683#962#0#PHP" />
-                <element signature="e#484#540#0#PHP" />
-                <element signature="e#872#911#0#PHP" />
-                <element signature="e#2104#2164#0#PHP" />
-                <element signature="e#2217#2575#0#PHP" />
-                <element signature="e#2581#3737#0#PHP" />
-                <element signature="e#3743#3794#0#PHP" />
-                <element signature="e#5489#6445#0#PHP" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="170" selection-start-line="10" selection-start-column="151" selection-end-line="10" selection-end-column="170" />
             </state>
           </provider>
         </entry>
@@ -97,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/lang/en/translation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="88" column="16" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="64" column="68" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -106,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/lang/ar/translation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="89" column="38" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="89" selection-end-column="38" />
+            <state relative-caret-position="1734">
+              <caret line="102" selection-start-line="102" selection-end-line="103" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -116,10 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>m_aside_left</find>
-      <find>flaticon-grid-menu</find>
-      <find>m-topbar__username m--hide</find>
-      <find>m_quick_sidebar</find>
       <find>m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light</find>
       <find>la la-angle-down</find>
       <find>login</find>
@@ -141,14 +136,19 @@
       <find>&lt;form</find>
       <find>supplier</find>
       <find>address</find>
-      <find>imgs/FDF.png</find>
       <find>الرجاء رفع الصورة الخاصة بالمنتج</find>
       <find>supplier.index</find>
       <find>update</find>
       <find>التصنيف</find>
+      <find>{{ assets('userAssets/imgs/R.png') }}</find>
+      <find>city</find>
+      <find>imgs/FDF.png</find>
+      <find>color</find>
+      <find>$product-&gt;catagory-&gt;name_ar</find>
     </findStrings>
     <replaceStrings>
       <replace>dashboardAssets</replace>
+      <replace>{{ asset('userAssets/imgs/R.png') }}</replace>
       <replace>{{ asset('userAssets/imgs/FDF.png') }}</replace>
     </replaceStrings>
   </component>
@@ -158,11 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminAuthController.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard/Auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/AuthUsersMiddleware.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/UserAuthMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/PayerAuthMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
@@ -191,7 +186,6 @@
         <option value="$PROJECT_DIR$/resources/views/users/layouts/scripts.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_14_064938_create_suppliers_table.php" />
         <option value="$PROJECT_DIR$/app/Supplier.php" />
-        <option value="$PROJECT_DIR$/app/Order.php" />
         <option value="$PROJECT_DIR$/resources/views/users/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_14_070229_create_products_table.php" />
@@ -202,11 +196,17 @@
         <option value="$PROJECT_DIR$/resources/views/users/suppliers/products/addOffer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/users/suppliers/products/editProduct.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/users/suppliers/products/editOffer.blade.php" />
-        <option value="$PROJECT_DIR$/routes/user-web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/resources/views/users/lastProducts.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SupplierController.php" />
+        <option value="$PROJECT_DIR$/app/Order.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/layouts/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/ar/translation.php" />
+        <option value="$PROJECT_DIR$/routes/user-web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/suppliers/orders/endedOrders.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/suppliers/orders/newOrders.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/suppliers/orders/reservationOrders.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/translation.php" />
         <option value="$PROJECT_DIR$/resources/views/users/suppliers/index.blade.php" />
       </list>
@@ -295,11 +295,11 @@
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -307,6 +307,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,13 +325,6 @@
               <item name="Eventya" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eventya" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
@@ -359,15 +353,7 @@
               <item name="Eventya" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eventya" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="catagories" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
@@ -375,6 +361,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
@@ -383,6 +370,15 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
               <item name="suppliers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Eventya" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="suppliers" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eventya" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +398,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -467,12 +462,14 @@
       <workItem from="1556608962465" duration="11649000" />
       <workItem from="1556646695398" duration="14365000" />
       <workItem from="1556832625623" duration="1379000" />
-      <workItem from="1556898273781" duration="22833000" />
+      <workItem from="1556898273781" duration="23628000" />
+      <workItem from="1557174238597" duration="10899000" />
+      <workItem from="1557302924660" duration="388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118752000" />
+    <option name="totallyTimeSpent" value="130834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,10 +481,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-7" y="2" width="1378" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2632375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20182094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -513,47 +510,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/PayerAuthMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_30_203558_create_reset_codes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/VerifyResetPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="95" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="95" />
-          <folding>
-            <element signature="e#26#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/mails/verificationCode.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/users/auth/signInSupplier.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -684,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_14_064938_create_suppliers_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -747,9 +696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/23227142_1468706499894390_628826474_n_1556020783.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/23227142_1468706499894390_628826474_n_1556020783.jpg" />
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -826,23 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="154" column="48" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="48" />
-          <folding>
-            <element signature="e#683#962#0#PHP" />
-            <element signature="e#484#540#0#PHP" />
-            <element signature="e#872#911#0#PHP" />
-            <element signature="e#2104#2164#0#PHP" />
-            <element signature="e#2217#2575#0#PHP" />
-            <element signature="e#2581#3737#0#PHP" />
-            <element signature="e#3743#3794#0#PHP" />
-            <element signature="e#5489#6445#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/products/editOffer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -870,31 +800,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/ar/translation.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="89" column="38" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="89" selection-end-column="38" />
+        <state relative-caret-position="2516">
+          <caret line="154" column="48" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/translation.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/users/layouts/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="16" />
+        <state relative-caret-position="762">
+          <caret line="46" column="97" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/user-web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="72" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/orders/endedOrders.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="166" selection-start-line="12" selection-start-column="166" selection-end-line="12" selection-end-column="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/orders/newOrders.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="164" selection-start-line="10" selection-start-column="164" selection-end-line="10" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/orders/reservationOrders.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="170" selection-start-line="10" selection-start-column="151" selection-end-line="10" selection-end-column="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ar/translation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" selection-start-line="102" selection-end-line="103" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/translation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="64" column="68" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/users/suppliers/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
+        <state relative-caret-position="252">
+          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
         </state>
       </provider>
     </entry>
