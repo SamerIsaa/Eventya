@@ -45,6 +45,7 @@
                     <tr>
                             <th>#</th>
                             <th>{{trans('product.name')}}</th>
+                            <th>{{trans('product.supplier')}}</th>
                             <th>{{trans('product.category')}}</th>
                             <th> {{trans('product.price_per_hour')}}</th>
                             <th> {{trans('product.is_offer')}} </th>
@@ -77,6 +78,7 @@
                 columns : [
                     { data: 'id'              , name:'id'},
                     { data: 'name'              , name:'name'},
+                    { data: 'supplier.name'              , name:'supplier.name'},
                     { data: 'catagory.name_ar'              , name:'catagory.name_ar'},
                     { data: "price_per_hour"           , name:'price_per_hour'},
                     { data: 'is_offer' ,     name:'is_offer'},

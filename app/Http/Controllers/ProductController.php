@@ -38,7 +38,7 @@ class ProductController extends Controller
     }
 
     public function datatable(){
-        $product = Product::with('catagory')->get();
+        $product = Product::with(['supplier', 'catagory'])->get();
         return DataTables::of($product)
         ->editColumn('is_offer', function($model) {
             if($model->is_offer == 1){
@@ -107,7 +107,7 @@ class ProductController extends Controller
 
     public function show($id)
     {
-        $product = Product::with('catagory')->find($id);
+        $product = Product::with(['catagory', 'supplier'])->find($id);
          if($product == null){
              return abort(404);
          }else{

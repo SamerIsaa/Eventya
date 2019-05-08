@@ -84,7 +84,6 @@
                     { data: "price_per_hour"           , name:'price_per_hour'},
                     { data: 'is_offer' ,     name:'is_offer'},
                     { data: "offer_price_per_hour" , name:'offer_price_per_hour'},
-                    { data: "currency"           , name:'currency'},
                     { data: "rate"           , name:'rate'},
                     { data: 'tax'      , name:'tax'},
                     { data: 'Actions'         , name:'Actions'},

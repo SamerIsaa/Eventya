@@ -27,6 +27,10 @@
                                     <input type="text" class="form-control m-input" value=" {{$product->name}}" disabled>
                                 </div>
                                 <div class="form-group m-form__group">
+                                    <label for="example_input_full_name"> {{trans('product.supplier')}}</label>
+                                    <input type="text" class="form-control m-input" value=" {{$product->supplier['name']}}" disabled>
+                                </div>
+                                <div class="form-group m-form__group">
                                     <label>{{trans('product.category')}}</label>
                                     <input type="email" class="form-control m-input" value="{{$product->catagory['name_ar']}}" disabled>
                                 </div>

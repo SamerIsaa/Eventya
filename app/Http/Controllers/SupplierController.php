@@ -89,7 +89,7 @@ class SupplierController extends Controller
                                     <i class='flaticon-signs-1'></i>
                                </a>
                                <div class='dropdown-menu dropdown-menu-right'>
-                                       <a class='dropdown-item' href='/admin/product/$model->id'><i class='flaticon-search-1'></i>تفاصيل</a>
+                                       <a class='dropdown-item' href='/admin/products/$model->id'><i class='flaticon-search-1'></i>تفاصيل</a>
                                </div>
                        </span>";
            })
