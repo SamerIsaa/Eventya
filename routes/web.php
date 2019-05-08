@@ -48,6 +48,13 @@ Route::group(['middleware' => 'auth:admin'] , function (){
         Route::post('/approved', 'SupplierController@approve');
     });
 
+    Route::prefix('/products')->group(function () {
+        Route::get('/', 'ProductController@index');
+        Route::get('/datatable', 'ProductController@datatable');
+        Route::get('/{id}', 'ProductController@show');
+        Route::post('/delete', 'ProductController@destroy');
+    });
+
     Route::resource('admins' , 'Admin\AdminController')->except([
        'show' ,'destroy'
     ]);

@@ -49,10 +49,9 @@
                             <th> {{trans('product.price_per_hour')}}</th>
                             <th> {{trans('product.is_offer')}} </th>
                             <th> {{trans('product.offer_price_per_hour')}}</th>
-                            <th>{{trans('product.currency')}}</th>
                             <th>{{trans('product.rate')}}</th>
                             <th> {{trans('product.tax')}}</th>
-                            <th>{{trans('supplier.action')}}</th>
+                            <th>{{trans('product.action')}}</th>
                         </tr>
                     </thead>
 

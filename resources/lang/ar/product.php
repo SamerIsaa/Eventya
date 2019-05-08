@@ -1,6 +1,8 @@
 <?php
 return[
     'product'=>'المنتج',
+    'products' => 'المنتجات',
+    'supplier' => 'المورد',
     'category'=>'التصنيف',
     'currency' => 'العملة',
     'color' => 'اللون',
@@ -14,6 +16,7 @@ return[
     'back' => 'رجوع' ,
     'name' => 'اسم المنتج',
     'action' => 'الأحداث',
+    'show_product' => 'عرض المنتج',
     'supplierProducts' => 'منتجات المزود'
 ];
 ?>

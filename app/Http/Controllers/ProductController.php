@@ -9,6 +9,7 @@ use App\ProductImage;
 use App\Supplier;
 use Illuminate\Http\Request;
 use Validator;
+use Yajra\DataTables\DataTables;
 class ProductController extends Controller
 {
 
@@ -33,7 +34,31 @@ class ProductController extends Controller
 
     public function index()
     {
+        return view('dashboard.products.index');
+    }
 
+    public function datatable(){
+        $product = Product::with('catagory')->get();
+        return DataTables::of($product)
+        ->editColumn('is_offer', function($model) {
+            if($model->is_offer == 1){
+                return 'عرض';
+            }else{
+                return 'خارج العرض';
+            }
+        })
+       ->editColumn('Actions',function ($model){
+               return "<span class='dropdown center-block'>
+                               <a href='#' class='btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill' data-toggle='dropdown' aria-expanded='true'>
+                                    <i class='flaticon-signs-1'></i>
+                               </a>
+                               <div class='dropdown-menu dropdown-menu-right'>
+                                       <a class='dropdown-item' href='/admin/products/$model->id'><i class='flaticon-search-1'></i>تفاصيل</a>
+                               </div>
+                       </span>";
+           })
+           ->rawColumns(['Actions'])
+           ->make(true);
     }
 
     public function store(Request $request)
@@ -82,7 +107,12 @@ class ProductController extends Controller
 
     public function show($id)
     {
-
+        $product = Product::with('catagory')->find($id);
+         if($product == null){
+             return abort(404);
+         }else{
+             return view('dashboard.products.show', compact('product'));
+         }
     }
 
     public function edit($id)
