@@ -14,5 +14,6 @@ return[
     'location' => 'الموقع',
     'name' => 'اسم المورد',
     'action' => 'الأحداث',
+    'supplierProducts' => 'منتجات المزود'
 ];
 ?>

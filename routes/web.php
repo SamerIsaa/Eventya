@@ -41,7 +41,9 @@ Route::group(['middleware' => 'auth:admin'] , function (){
     Route::prefix('/supplier')->group(function () {
         Route::get('/', 'SupplierController@index')->name('dashboard.supplier.index');
         Route::get('/datatable', 'SupplierController@datatable');
-        Route::get('/{id}', 'SupplierController@show')->name('dashboard.supplier.show');
+        Route::get('/{id}', 'SupplierController@show');
+        Route::get('/{id}/products', 'SupplierController@products');
+        Route::get('/supplierProduct/{id}', 'SupplierController@supplierProduct');
         Route::post('/delete', 'SupplierController@destroy');
         Route::post('/approved', 'SupplierController@approve');
     });

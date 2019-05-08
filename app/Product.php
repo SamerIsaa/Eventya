@@ -16,21 +16,25 @@ class Product extends Model
         'currency',
         'tax',
         'condition',
-        'color',
+        'color',  
         'rate'
     ];
+ 
     public function supplier()
     {
         return $this->belongsTo(Supplier::class);
     }
+
     public function catagory()
     {
-        return $this->belongsTo(Catagory::class);
+        return $this->belongsTo(Catagory::class,'catagory_id','id');
     }
+
     public function productImages()
     {
         return $this->hasMany(ProductImage::class);
     }
+
     public function orders(){
         return $this->hasMany(Order::class);
     }
